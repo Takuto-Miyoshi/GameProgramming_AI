@@ -1,0 +1,71 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "compile",
+                "link"
+            ],
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "g++.exe",
+            "args": [
+                "-g",
+                "-c",
+                "Scripts\\**.h",
+                "Scripts\\**.cpp",
+                "-IC:\\DxLib_GCC3_22c",
+                "-IC:\\MinGW\\mingw32\\include",
+                "-I",
+                ".",
+                "-DDX_GCC_COMPILE",
+                "-DDX_NON_INLINE_ASM",
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "link",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "*.o",
+                "-mwindows",
+                "-LC:\\DxLib_GCC3_22c",
+                "-LC:\\MinGW\\mingw32\\lib",
+                "-lDxLib",
+                "-lDxUseCLib",
+                "-lDxDrawFunc",
+                "-ljpeg",
+                "-lpng",
+                "-lzlib",
+                "-ltiff",
+                "-ltheora_static",
+                "-lvorbis_static",
+                "-lvorbisfile_static",
+                "-logg_static",
+                "-lbulletdynamics",
+                "-lbulletcollision",
+                "-lbulletmath",
+                "-lopusfile",
+                "-lopus",
+                "-lsilk_common",
+                "-lcelt",
+                "-o",
+                "main.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

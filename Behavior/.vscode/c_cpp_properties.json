@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\DxLib_GCC3_22c",
+                "C:\\MinGW\\mingw32\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "MBCS",
+                "_MBCS"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:\\MinGW\\mingw32\\bin\\g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": [
+                "-DDX_GCC_COMPILE",
+                "-DDX_NON_INLINE_ASM"
+            ]
+        }
+    ],
+    "version": 4
+}
