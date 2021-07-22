@@ -10,6 +10,16 @@
 		"type_traits": "cpp",
 		"limits": "cpp",
 		"*.tcc": "cpp",
-		"typeinfo": "cpp"
+		"typeinfo": "cpp",
+		"array": "cpp",
+		"atomic": "cpp",
+		"string": "cpp",
+		"vector": "cpp",
+		"exception": "cpp",
+		"initializer_list": "cpp",
+		"iosfwd": "cpp",
+		"new": "cpp",
+		"tuple": "cpp",
+		"utility": "cpp"
 	}
 }

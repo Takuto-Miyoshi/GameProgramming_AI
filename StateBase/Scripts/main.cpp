@@ -10,7 +10,7 @@ int WINAPI WinMain( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
     if ( DxLib_Init() == -1 ) return -1;
     SetDrawScreen( DX_SCREEN_BACK );
 
-    auto timeManager = times::TimeManager::CreateInstance();
+    auto timeManager = times::TimeManager::Instance();
 
     actor::Enemy enemy;
 
