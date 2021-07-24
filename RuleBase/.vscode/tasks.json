@@ -20,6 +20,7 @@
             "args": [
                 "-g",
                 "-c",
+				"-fconcepts",
                 "Scripts\\**.h",
                 "Scripts\\**.cpp",
                 "-IC:\\DxLib_GCC3_22c",
